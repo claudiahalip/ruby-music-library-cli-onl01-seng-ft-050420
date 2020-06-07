@@ -23,6 +23,7 @@ class MusicImporter
   
   def import
     new_files = self.files
+   
     new_files.each do |file| 
       Song.create_from_filename(file)
     end
